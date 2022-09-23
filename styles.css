@@ -2,6 +2,9 @@ body {
     font-family: Roboto;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 header {
@@ -64,7 +67,7 @@ a:active {
 }
 
 .unit-one-text div:nth-child(2){
-    color: #e5e7eb;
+gap: 24px;    color: #e5e7eb;
     font-size: 18px;
 }
 
@@ -118,12 +121,73 @@ a:active {
 
 .unit-three-container{
     display:flex;
-    flex-direction: column;
+    justify-content: center;
     background: #e7e5eb;
     padding: 48px
 }
 
-.unit-three-container div:first-child{
-    width: 500px;
-    align-self: flex-start;
+.text-container {
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+}
+
+.text-container div:first-child{
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.text-container div:last-child{
+    color: #1f2937;
+    width: 750px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.unit-four-container {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+.call-to-action-container {
+    display: flex;
+    width: 900px;
+    background: #3882f6;
+    padding: 48px;
+    border-radius: 16px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-text-container {
+    color: #f9faf8;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.cta-text-container div:last-child {
+    color: #e7e5eb;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.call-to-action-container button {
+    height: 50px;
+    width: 100px;
+    border: 3px solid #f9faf8;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+footer {
+    background: #1f2937;
+    color: #e5e7eb;
+    padding: 48px;
+    text-align: center;
 }
